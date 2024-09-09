@@ -13,8 +13,7 @@ public class WordCounter {
 	public static void main(String[] args) {
 		HashMap<String, Integer> WordsHash = new HashMap<String, Integer>(); // create hashmap
 		
-		//String filePath = "/Users/zerekhenderson/git/LSP_REPO_FA24/large_scale_programming_Assignement_1/src/org/howard/edu/lsp/assignment2/words.text";
-		String filePath = "src/org/howard/edu/lsp/assignment2/words.text";
+		String filePath = "src/org/howard/edu/lsp/assignment2/words.text"; //relative file path to text file
 
 
 		try {
