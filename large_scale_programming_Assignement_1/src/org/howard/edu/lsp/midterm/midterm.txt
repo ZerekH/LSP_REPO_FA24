@@ -1,0 +1,47 @@
+1a) The class has low cohesion because it handles user details, work out tracking, and meal tracking all in one class
+
+
+"Cohesion is an ordinal type of measurement and is usually described as “high cohesion” or “low cohesion”. Modules with high cohesion tend to be preferable, because high cohesion is associated with several desirable software traits including robustness, reliability, reusability, and understandability. 
+In contrast, low cohesion is associated with undesirable traits such as being difficult to maintain, test, reuse, or understand.
+Cohesion is often contrasted with coupling. High cohesion often correlates with loose coupling, and vice versa." -Wikipedia
+
+1b) we should have a separate UserProfile class, work out Tracker class, Nutrition tracker class, and fitness report generator class.
+the fitness report class should consolidate data from the other 3 classes.
+
+2a) Student should be an abstract class. Because the student 'object' is meant to represent an entity that has common attributes
+shared by the FirstYear, SecondYear, and ThirdYear subclasses.
+
+(students.remove(Thirdyear)) is trying to modify a list while iterating over it in a for-each loop this will lead to a concurrent modification exception
+ThirdYear = (ThirdYear) student; will throw a ClassCastException if any student in the student list we are looping over is not a third year
+
+"https://www.w3schools.com/java/java_abstract.asp" - abstract classes definition 
+
+3a) It's not well encapsulated. We must make instance variables private so they can't be directly reached.
+I would also create public getter and setter function for the variables.
+
+4a) Once a Car is created the trim cannot be changed because of the inheritance model. Inheritance creates a fixed relationship
+between the car and the trims. To change the trim an entirely new car object would need to be created.
+
+4b) We could create a TrimLevel class and have the Car class hold an instance of TrimLevel. This allows for the trim level 
+to be dynamically changed by modifying the trimLevel object that the Car object references.
+
+"https://www.digitalocean.com/community/tutorials/composition-vs-inheritance" -Inheritance vs composition
+
+5) This can be expensive to fix and makes the code hard/annoying to maintain due to an unnecessary increase in code complexity.
+the issue relates to Riel's heuristic of avoiding duplicate or redundant code. 
+
+6) Placing database calls in domain classes leads to high coupling between the domain logic 
+and persistence logic. This violates Riel’s heuristic of low coupling because the classes become dependent 
+on specific operations, reducing flexibility.
+
+"https://www.geeksforgeeks.org/software-engineering-coupling-and-cohesion/" -coupling & cohesion
+
+7) Inheritance should be applied when there is a clear "is-a" relationship between the classes. The design must ensure strong 
+cohesion, each class in the hierarchy should have a well-defined, non-redundent role.
+The superclass should encapsulate shared behavior to reduce duplication.
+
+8) Inheritance defines an "is-a" relationship, while composition creates a "has-a" relationship. 
+Composition is preferred for more flexible and loosely coupled designs.
+
+9) Cohesion refers to how focused a class's responsibilities are. High cohesion is better because 
+it makes the class easier to maintain and understand.
