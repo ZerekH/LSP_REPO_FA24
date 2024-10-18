@@ -47,3 +47,5 @@ public class VotingMachine {
         return result.toString();
     }
 }
+
+/** https://www.w3schools.com/java/java_hashmap.asp hashmaps in java*/

@@ -28,10 +28,11 @@ public class Calculator {
      * @return The sum of all elements in the array
      */
     public static int sum(int[] numbers) {
-        int total = 0;
+        int total = 0; 
         for (int number : numbers) {
             total += number;
         }
         return total;
     }
 }
+/** ttps://www.geeksforgeeks.org/iterate-through-list-in-java/ iterate over list in java*/
