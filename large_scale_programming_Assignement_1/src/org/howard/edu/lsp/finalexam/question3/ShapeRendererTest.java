@@ -30,7 +30,7 @@ class ShapeRendererTest {
     }
 
     @Test
-    void testUnknownShapeRendering() {
+    void testUnknownShapeRendering() { 
         ShapeFactory factory = ShapeFactory.getInstance();
         Shape shape = factory.getShape("hexagon");
         assertNull(shape);

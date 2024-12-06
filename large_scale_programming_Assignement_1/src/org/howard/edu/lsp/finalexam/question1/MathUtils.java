@@ -4,7 +4,7 @@ package org.howard.edu.lsp.finalexam.question1;
 public class MathUtils {
     /**
      * Returns the factorial of a given non-negative integer.
-     * If the input is negative, throws IllegalArgumentException.
+     * If the input is negative, throws IllegalArgumentException. 
      */
     public int factorial(int n) {
         if (n < 0) {

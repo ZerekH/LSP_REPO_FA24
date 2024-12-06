@@ -8,7 +8,6 @@ public class MathUtilsTest {
 
     private final MathUtils mathUtils = new MathUtils();
 
-    // Tests for factorial method
 
     @Test
     public void factorial_givenZero_returnsOne() {

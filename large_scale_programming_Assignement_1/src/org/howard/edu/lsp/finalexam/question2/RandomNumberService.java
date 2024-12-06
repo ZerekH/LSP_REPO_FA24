@@ -42,7 +42,7 @@ public class RandomNumberService {
      * Sets the random number generation method.
      *
      * @param methodName the method name, either "JAVA_RANDOM" or "CUSTOM_RANDOM".
-     * @throws IllegalArgumentException if an invalid method name is provided.
+     * @throws IllegalArgumentException if an invalid method name is provided. 
      */
     public void setMethod(String methodName) {
         switch (methodName.toUpperCase()) {

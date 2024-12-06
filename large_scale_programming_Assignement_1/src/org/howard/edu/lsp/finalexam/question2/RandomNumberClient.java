@@ -3,7 +3,7 @@ package org.howard.edu.lsp.finalexam.question2;
 import java.util.Scanner;
 
 /**
- * Client program to demonstrate the RandomNumberService with runtime method selection.
+ * Client program to demonstrate the RandomNumberService with runtime method selection. 
  */
 public class RandomNumberClient {
     public static void main(String[] args) {
