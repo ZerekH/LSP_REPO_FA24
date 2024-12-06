@@ -14,7 +14,7 @@ public class MathUtils {
             return 1;
         }
         return n * factorial(n - 1);
-    }
+    } 
 
     /**
      * Returns true if the given number is a prime number, 
